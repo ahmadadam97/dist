@@ -10,6 +10,13 @@
 .principle>span,.experience-index,.research-label{color:var(--muted)} .project-link{min-height:40px} .social-links a,.social-links button{min-height:36px} @media(pointer:coarse){.project-link,.social-links a,.social-links button,nav>a{min-height:44px}.sample-button{min-height:40px}}
 
 /* Readable type at every screen size; allow the layout to grow with the text. */
+.contact-whatsapp { display: flex; align-items: center; gap: 10px; padding: 16px 0; border-bottom: 1px solid #adba9e; }
+.contact-whatsapp > .icon:first-child { color: #376d43; }
+.contact-whatsapp > .icon:last-child { margin-left: auto; }
+.contact-whatsapp > span { min-width: 0; }
+.whatsapp-label { display: block; color: var(--muted); font-size: .8125rem; line-height: 1.5; }
+.phone-number { display: block; font-size: 1rem; line-height: 1.6; }
+.contact-whatsapp:hover .phone-number { color: #376d43; text-decoration: underline; text-underline-offset: 4px; }
 .tool-stages strong { font-size: 1.125rem; font-family: Consolas, "Courier New", monospace; letter-spacing: -.4px; }
 @media screen {
   body { font-size: 1rem; }
