@@ -1,5 +1,3 @@
-import { Analytics } from '@vercel/analytics/next';
-
 const verifyButton = document.querySelector('#verify-button');
 const verifyResult = document.querySelector('#verify-result');
 let checked = false;
@@ -27,14 +25,3 @@ document.querySelector('#copy-email').addEventListener('click', async () => {
   }
 });
 document.querySelector('#year').textContent = new Date().getFullYear();
-
-function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      <Component {...pageProps} />
-      <Analytics />
-    </>
-  );
-}
- 
-export default MyApp;
